@@ -3,32 +3,45 @@
    <head>
       <meta charset = "UTF-8">
       <title>Contacts</title>
-      <link rel = "stylesheet" type = "text/css" href="assets/css/style.css" >
+      <link rel = "stylesheet" type = "text/css" href="assets/css/reset.css">
+      <link rel = "stylesheet" type = "text/css" href="assets/css/style.css">
    </head>
    <body>
-      <div id="Banner" class="clearflex">
-         <header class="mainHeading">
-            <h1 class="nameHead">Armon Roberts</h1>
-            <nav class="navBar">
-               <a href="index.html" title="About Page">About</a>
-               <a href="portfolio.html" title="Portfolio">Portfolio</a>
-               <a href="contact.html" title="Contact Page">Contact</a>
-            </nav>
-         </header>
-      </div>
-      <main class ="container clearfix">
+<!--        Main Header Section-->
+<div id="Banner">
+   <header class ="mainHeading">
+      <h1 class = "nameHead">Armon Roberts</h1>
+<!--            Nav Bar Section-->
+       <nav class="navBar">
+         <a href="contact.html" title="Contact Page">Contact</a>
+         <a href="portfolio.html" title="Portfolio">Portfolio</a>
+         <a href="index.html" title="About Page">About</a>
+      </nav>
+   </header>
+</div>
+<!--       Main Section Container-->
+      <main class ="container">
          <h1>Contact</h1>
-         <form class="contactForm">
-            Name<br>
-            <input type="text" name="fullname"><br>
-            Email<br>
-            <input type="email" name="email"><br>
-            Message<br>
-            <textarea>
-            </textarea><br>
-            <input type="submit" value="Submit!">
+          <hr>
+         <form id="contactForm">
+            <ul>
+               <li>
+                  <label for="name">Name</label>
+                  <input type = "text" id="name" name="name" required="required">
+               </li>
+               <li>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required="required">
+               </li>
+               <li>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required="required"></textarea>
+               </li>
+               </ul>
+               <input alt="Submit" type="submit" value="Submit">
          </form>
       </main>
-      <footer></footer>
+<!--       Footer-->
+      <footer>Armon Roberts 2019</footer>
    </body>
 </html>
