@@ -65,39 +65,39 @@ a:active {
     text-decoration: underline;
 }
 
-/*Footer Styling*/
-footer {
-    border-top: 8px solid #4aaaa5;
-    background-color: #666666;
-    height: 60px;
-    text-align: center;
-    color: #ffffff;
-    padding: 20px;
-    clear: both;
-    flex-shrink: 0;
-}
 
 
 /*Main Content Styling*/
 
 .container {
     width: 960px;
-    height: 500px;
+    height: 100px;
     background-color: #ffffff;
     border: 3px solid #dddddd;
     flex: 1 0 auto;
-    margin: 50px  auto;
+    margin: 50px auto;
     margin-bottom: 200px;
     display: block;
-    padding: 20px;
-    align-content: center;
     overflow: hidden; 
     
 }
 
+/*Footer Styling*/
+footer {
+    border-top: 8px solid #4aaaa5;
+    background-color: #666666;
+    height: auto;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    clear: both;
+    flex-shrink: 0;
+    width: 100%;
+}
+
 .mainHeading {
     background-color: #ffffff;
-    width: 960px;
+    width: auto;
     margin: auto;
     flex-shrink: 0;
     padding: 20px;
@@ -138,21 +138,22 @@ p {
     text-indent: 50px;
 }
 
-
+form{
+  overflow: hidden;
+}
 
 #profilePic {
-    width: 220px;
+    max-width: 220px;
     height: auto;
     float: left;
     margin: 15px;
 }
 /*Contact Page Styling*/
-#contactForm {
+form {
    padding: 10px;
    width: 100%;
-   font-family: Arial, Helvetica, sans-serif;
-
 }
+
 #name, #email {
     display: block;
     width: 100%;
@@ -162,10 +163,12 @@ p {
     color: white;
 }
 
-#message{
-    display:block;
+textarea {
     width: 100%;
-    height: 200px;
+    height: 150px;
+    resize: none;
+    overflow: auto;
+    margin: 5px;
 }
 
 input[type=submit] {
@@ -179,7 +182,7 @@ input[type=submit] {
 /*Portfolio Page Styling*/
  
 img {
-    width: 184px;
+    max-width: 60%;
     height: auto;
 }
 
@@ -189,4 +192,71 @@ a.projectLink {
     margin: 0 15px;
     
 }
+ul, li {
+  list-style-type: none;
+}
 
+input {
+  margin: 5px;
+}
+/* Media queries */
+@media screen and (max-width: 980px) {
+    html, body {
+      background-image: url();
+      background-color: yellow;
+    }
+    body{
+      min-height: 100%;
+    }
+    .container {
+        width: 90%;
+        height: auto;
+        background-color: #ffffff;
+        border: 3px solid #dddddd;
+        flex: 1 0 auto;
+        display: block;
+        padding: 20px;
+        align-content: center;
+        overflow: hidden; 
+    }
+  
+    footer {
+      border-top: 8px solid #4aaaa5;
+      background-color: #666666;
+      height: 60px;
+      text-align: center;
+      color: #ffffff;
+      padding: 10px;
+      clear: both;
+      flex-shrink: 0;
+    }
+    
+    li {
+      display: block;
+      width: 100%;
+      margin: auto;
+      padding: 2px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #cccccc;
+    }
+    
+    #message{
+        display:block;
+        width: 100%;
+        height: 100px;
+    }
+    }
+    
+    @media screen and (max-width: 768px) {
+      html, body {
+        background-color: red;
+      }
+      
+    }
+  /* Width at 168px and below */
+  @media screen and (max-width: 640px) {
+    body {
+      background-color: green;
+    }
+    }
+  
