@@ -40,7 +40,7 @@ nav a:first-child {
 	border: none;
 }
 a:link {
-	color: #777777;
+	color: orange;
 	background-color: transparent;
 	text-decoration: none;
 }
@@ -252,10 +252,24 @@ input {
 		height: 100px;
 	}
 }
-/* Width at 168px and below */
+
 @media screen and (max-width: 640px) {
-	body {
-		background: none;
-		background-color: green;
+
+	#Banner {
+		width: 100%;
+		max-width: 640px;
+	}
+	.mainHeading {
+		display: inline;
+	}
+	
+	.container {
+		width: 90%;
+
+	}
+	.nameHead {
+		height: auto;
+		padding-bottom: 2px;
 	}
 }
+
