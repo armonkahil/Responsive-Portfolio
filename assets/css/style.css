@@ -214,9 +214,6 @@ input {
 } 
 
 @media screen and (max-width: 768px) {
-	html, body {
-		background-color: red;
-	}
 	body{
 		min-height: 100%;
 	}
@@ -258,6 +255,7 @@ input {
 /* Width at 168px and below */
 @media screen and (max-width: 640px) {
 	body {
+		background: none;
 		background-color: green;
 	}
 }
