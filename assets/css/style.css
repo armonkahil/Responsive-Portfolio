@@ -128,6 +128,7 @@ p {
 	height: auto;
 	float: left;
 	margin: 15px;
+	margin-bottom: 2px;
 }
 /*Contact Page Styling*/
 form {
@@ -190,53 +191,28 @@ ul, li {
 input {
 	border: 1px solid;
 }
+
 /* Media queries */
 @media screen and (max-width: 980px) {
-	body{
-		min-height: 100%;
-	}
 	.mainHeading {
 		width: 740px;
+	}
+
+	#profilePic{
+		width: 140px;
+		height: auto;
 	}
 	img {
 		width: 150px;
 		height: auto;
 	}
 	.container {
-		width: 90%;
-		height: auto;
-		background-color: #ffffff;
-		border: 3px solid #dddddd;
-		flex: 1 0 auto;
-		display: block;
-		padding: 20px;
-		align-content: center;
-		overflow: hidden;
+		width: 80%;
+
 	}
-	footer {
-		border-top: 8px solid #4aaaa5;
-		background-color: #666666;
-		height: 30px;
-		text-align: center;
-		color: #ffffff;
-		padding: 10px;
-		clear: both;
-		flex-shrink: 0;
-	}
-	li {
-		display: block;
-		width: 100%;
-		margin: auto;
-		padding: 2px;
-		font-family: Arial, Helvetica, sans-serif;
-		color: #777777;
-	}
-	#message{
-		display:block;
-		width: 100%;
-		height: 100px;
-	} 
+	
 } 
+
 @media screen and (max-width: 768px) {
 	html, body {
 		background-color: red;
