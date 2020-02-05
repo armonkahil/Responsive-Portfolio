@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<link href="assets/css/reset.css" rel="stylesheet" type="text/css">
-   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-	<title>Portfolio | Armon Roberts</title>
-</head>
-<body>
-	
-   <!--        Main Header Section-->
-	<div id="Banner">
-		<header class="mainHeading">
-			<a href="index.html">
-         <h1 class="nameHead">Armon Roberts</h1></a> 
-         <!--            Nav Bar Section-->
-			<nav class="navBar">
-				<a href="contact.html" title="Contact Page">Contact</a> <a href="portfolio.html" title="Portfolio">Portfolio</a> <a href="index.html" title="About Page">About</a>
-			</nav>
-		</header>
-   </div>
-   <!--       Main Section Container-->
-	<div class="container clearfix">
-		<h1>Portfolio</h1>
-		<hr>
-		<div class="portContainer">
-			<img alt="Placeholder" src="assets/images/Jim.jpg">
-			<h3>Basic Portfolio</h3>
-		</div>
-		<div class="portContainer">
-			<img alt="Placeholder" src="assets/images/Jim.jpg">
-			<h3>Bootstrap Portfolio</h3>
-		</div>
-		<div class="portContainer">
-			<img alt="Placeholder" src="assets/images/Jim.jpg">
-			<h3>Responsive Portfolio</h3>
-		</div>
-		<div class="portContainer">
-			<img alt="Placeholder" src="assets/images/Jim.jpg">
-			<h3>Word Guess Game</h3>
-		</div>
-		<div class="portContainer">
-			<img alt="Placeholder" src="assets/images/Jim.jpg">
-			<h3>Project</h3>
-		</div>
-   </div>
-   <!--Footer-->
-	<footer>
-		Armon Roberts 2019
-	</footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Armon Roberts</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="masthead">
+        <div class="container">
+          <a href="index.html" id="logo">Armon Roberts</a>
+          <nav>
+            <ul>
+              <li><a href="index.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container">
+        <section class="main-section">
+          <h1>Portfolio</h1>
+
+          <div class="work">
+            <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess" />
+
+            <h3>Word Guess</h3>
+          </div>
+          <div class="work">
+            <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game" />
+
+            <h3>RPG Game</h3>
+          </div>
+          <div class="work">
+            <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game" />
+
+            <h3>Trivia Game</h3>
+          </div>
+          <div class="work">
+            <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Info Widget" />
+
+            <h3>Info Widget</h3>
+          </div>
+          <div class="work">
+            <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors" />
+
+            <h3>Rock Paper Scissors</h3>
+          </div>
+        </section>
+      </main>
+      <div class="push"></div>
+    </div>
+
+    <footer>
+      <div class="container">
+        &copy; Copyright
+      </div>
+    </footer>
+  </body>
 </html>

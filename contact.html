@@ -1,52 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
-   <head>
-      <meta charset = "UTF-8">
-      <meta content="width=device-width, initial-scale=1.0" name="viewport">
-      
-      <link rel = "stylesheet" type = "text/css" href="assets/css/reset.css">
-      <link rel = "stylesheet" type = "text/css" href="assets/css/style.css">
-      <title>Contact | Armon Roberts</title>
-   </head>
-   <body>
-<!--        Main Header Section-->
-<div id="Banner">
-      <header class ="mainHeading">
-         <a href="index.html">
-         <h1 class = "nameHead">Armon Roberts</h1></a>
-<!--            Nav Bar Section-->
-       <nav class="navBar">
-         <a href="contact.html" title="Contact Page">Contact</a>
-         <a href="portfolio.html" title="Portfolio">Portfolio</a>
-         <a href="index.html" title="About Page">About</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Armon Roberts</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Armon Roberts</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-   </header>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+  </main>
+  <div class="push"></div>
 </div>
-<!--       Main Section Container-->
-      <main class ="container">
-         <h1>Contact</h1>
-          <hr>
-         <form>
-            <ul>
-               <li>
-                  <label for="name">Name</label>
-                  <input type = "text" id="name" name="name" required="required">
-               </li>
-               <li>
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required="required">
-               </li>
-               <li>
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" required="required"></textarea>
-               </li>
-               <li>
-                  <input alt="Submit" type="submit" value="Submit">
-               </li>
-            </ul>
-         </form>
-      </main>
-<!--       Footer-->
-      <footer>Armon Roberts 2019</footer>
-   </body>
+
+  <footer>
+    <div class="container">
+      &copy; Copyright
+    </div>
+  </footer>
+</body>
 </html>
